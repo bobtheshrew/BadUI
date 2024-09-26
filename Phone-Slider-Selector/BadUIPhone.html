@@ -30,8 +30,8 @@
     <h1>Check out <a href="./..">More Bad UI</a> samples</h1>
     <form>
         <h3>Bad Phone Selector</h3>
-        <div>Phone: <span id="phoneDisplay">(30) 339-669-214 </span></div>
-        <input id="slider" type="range" min="10000000000" max="99999999999" value="55555555555" title="Hint: use keyboard arrows to change value" style="transition: width 0.5s ease-in-out;">
+        <div>Phone: <span id="phoneDisplay">(300)339-6684 </span></div>
+        <input id="slider" type="range" min="10000000000" max="19999999999" value="15555555555" title="Hint: use keyboard arrows to change value" style="transition: width 0.5s ease-in-out;">
         <hr>
         <div>
             <input id="advancedMode" type="checkbox">
@@ -65,7 +65,7 @@
         // Phone value is converted to a string
         function PhoneNumberToDisplay( value ) {
             // (XX)XXX-XXX-XXXX
-            var display = "("+ value.toString().substr(0, 2) + ") " + value.toString().substr(2, 3) + '-' + value.toString().substr(5, 3)+'-' + value.toString().substr(8, 3);
+            var display = "("+ value.toString().substr(0, 3) + ")" + value.toString().substr(2, 3) + '-' + value.toString().substr(5, 4);
             return display;
         }
         
