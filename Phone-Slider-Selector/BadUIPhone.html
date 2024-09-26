@@ -143,9 +143,12 @@
         
         // On submit
         document.getElementById("submit").addEventListener("click", function(event) {
+            
             if (confirm("Is this your Phone Number?\n" + PhoneNumberToDisplay(value))) {
                 // Thank you
-                alert("Thank you for your submission!");
+                //alert("Thank you for your submission!");
+                confirm("Reconfirm sureness:\n Are you sure this your Phone Number?\n" + PhoneNumberToDisplay(value))
+                alert("Please contact your phone administrator to change your phone number to " + PhoneNumberToDisplay(value));
             } else {
                 // Please Contact your phone administrator
                 alert("Please contact your phone administrator to change your phone number to " + PhoneNumberToDisplay(value));
