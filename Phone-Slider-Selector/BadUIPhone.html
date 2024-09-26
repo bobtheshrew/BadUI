@@ -65,7 +65,7 @@
         // Phone value is converted to a string
         function PhoneNumberToDisplay( value ) {
             // (XX)XXX-XXX-XXXX
-            var display = "+1 ("+ value.toString().substr(1, 4) + ") " + value.toString().substr(4, 7) + '-' + value.toString().substr(7, 11);
+            var display = "+1 ("+ value.toString().substring(1, 4) + ") " + value.toString().substring(4, 7) + '-' + value.toString().substring(7, 11);
             return display;
         }
         
